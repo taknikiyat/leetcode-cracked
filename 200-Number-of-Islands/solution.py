@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/number-of-islands/
-# Runtime: 530 ms, faster than 17.28% of Python online submissions for Number of Islands.
-# Memory Usage: 28.9 MB, less than 43.49% of Python online submissions for Number of Islands.
-# O(rows * cols) time | O(1) space
+# O(rows * cols) time | O(rows * cols) space
 class Solution(object):
     def numIslands(self, grid):
         count = 0
@@ -20,4 +18,3 @@ class Solution(object):
         self.callDFS(grid, i + 1, j)  # go down
         self.callDFS(grid, i, j - 1)  # go left
         self.callDFS(grid, i, j + 1)  # go right
-        
