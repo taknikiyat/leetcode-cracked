@@ -16,6 +16,5 @@ class Solution(object):
         for i in range(len(nums)):
             if target - nums[i] in nums_map: # if complement of current number exists in map
                 return [nums_map[target - nums[i]], i] # return complement's index and current index
-            else:
-                nums_map[nums[i]] = i # add current number as key in map with index as value
+            nums_map[nums[i]] = i # add current number as key in map with index as value
         return []
