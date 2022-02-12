@@ -20,13 +20,13 @@ public:
             int digit1 = (l1) ? l1->val : 0;
             int digit2 = (l2) ? l2->val : 0;
                 
-            # add digits
+            // add digits
             int result = digit1 + digit2 + carry;
             carry = result / 10;
             result = result % 10;
             cur->next = new ListNode(result);
             
-            # update pointers
+            // update pointers
             cur = cur->next;
             l1 = (l1) ? l1->next : NULL;
             l2 = (l2) ? l2->next : NULL;
